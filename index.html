@@ -5,7 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <h1 class="js-title">Paper Sicssors Rock Game!</h1>
+    </div>
+    <div class="container">
+      <div class="game-panel">
+        <div class="game-panel-header">
+          <div class="round-title">
+            <h3>Round:&nbsp;<span class="js-round-counter">0</span>/5</h3>
+            <h3 class="js-player-scores">🤖 0 🧑 0</h3>
+          </div>
+        </div>
+        <div class="game-panel-content">
+          <div class="js-game-over-element"></div>
+          <h2 class="js-select-move select-move">Select Your Move:</h2>
+          <div class="player-move-buttons">
+            <button class="js-paper-button">📄</button>
+            <button class="js-scissors-button">✂️</button>
+            <button class="js-rock-button">🪨</button>
+          </div>
+        </div>
+      </div>
+      <div class="result-panel">
+        <div class="round-moves">
+          🤖 -
+          <span class="js-computer-move-element">📄</span> &nbsp;&nbsp;&nbsp;
+          <span class="js-human-move-element">📄</span> - 🧑
+        </div>
+        <div class="result-title-content">
+          <h2 class="js-round-title">Round 1</h2>
+          <h2 class="js-round-victor">🤖 Wins!</h2>
+        </div>
+        <p class="js-result">
+          https://github.com/elfsmelf/rock-paper-scissors/pull/new/ui
+        </p>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
 </html>

@@ -1,0 +1,112 @@
+body {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1 {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  font-weight: 200;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  min-width: 20px;
+}
+
+.game-panel {
+  padding: 50px;
+  height: 400px;
+  min-width: 300px;
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  flex: 1;
+}
+
+.round-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.result-panel {
+  padding: 50px;
+}
+
+.player-move-buttons button {
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px white;
+  border-radius: 50px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.player-move-buttons button:hover {
+  font-size: 30px;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.278);
+  border: solid 2px white;
+  border-radius: 50px;
+}
+
+.player-move-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.select-move {
+  margin-bottom: 35px;
+}
+
+.result-title-content {
+  display: flex;
+  justify-content: space-between;
+}
+.round-moves {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.js-restart-button {
+  margin-top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.js-restart-button:hover {
+  margin-top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+}
