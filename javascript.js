@@ -15,6 +15,8 @@ const playerScoreElement = document.querySelector(".js-player-scores");
 const roundVictorElement = document.querySelector(".js-round-victor");
 const computerMoveElement = document.querySelector(".js-computer-move-element");
 const humanMoveElement = document.querySelector(".js-human-move-element");
+const initialHumanIcon = document.querySelector(".js-initial-human-icon");
+const initialComputerIcon = document.querySelector(".js-initial-com-icon");
 
 const gameOverElement = document.createElement("div");
 const gameOverContent = document.createElement("h2");
@@ -125,6 +127,9 @@ function roundCounter(humanScore, computerScore) {
 
 function playerAction(humanChoice) {
   const computerChoice = getComputerChoice();
+
+  initialHumanIcon.textContent = "- 🧑";
+  initialComputerIcon.textContent = "🤖 -";
 
   console.log(`${computerChoice} and ${humanChoice}`);
   const result = playRound(humanChoice, computerChoice);
