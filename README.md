@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Console rock paper scissors game
+Rock paper scissors game with basic javascript dom gui
